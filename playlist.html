@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>EARCURE</title>
+	<link rel="stylesheet" type="text/css" href="maincss.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+
+	<header id="body-header">
+		<nav>
+			<ul class="horizontal-list text-center nav-menu">
+                <li>
+                    <i class="fas fa-headphones" id="logo"></i>
+                </li>
+                <li id="fav">
+                	<div class="dropdown">
+						<button class="dropbtn">FAVOURITES</button>
+						<div class="dropdown-content">
+						    <a href="#latest-release">Latest</a>
+						    <a href="#popular-artist">Popular Artist</a>
+						    <a href="#music-station">Music Station</a>
+						    <a href="#latest-english">Latest English</a>
+						    <a href="#latest-hindi">Latest Hindi</a>
+						</div>
+					</div>
+                </li>
+                <li id="searchbar">
+                	<form action="" >
+                		<label for="search"><i class="fas fa-search"></i></label>
+                		<input type="text" name="search" placeholder="search...">
+                		<button type="submit"><i class="fas fa-microphone"></i></button>
+                	</form>
+                </li>
+                <li>
+                	<i class="fas fa-bell" id="bell-icon"></i>
+                </li>
+                <li>
+                	<i class="fas fa-user" id="user-icon"></i>
+                </li>
+            </ul>
+		</nav>
+	</header>
+	<header id="body-footer">
+		<img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/peaky-blinders-1614180392.jpg">
+		<div class="cd-details">
+			<span>I'm Peaky blinder</span>
+			<span class="queue-artist">Otnicka</span>
+		</div>
+		<div class="left-icon">
+			<i class="far fa-heart"></i>
+			<i class="fas fa-ban"></i>
+		</div>
+		<div class="middle-icon">
+			<i class="fas fa-random"></i>
+			<i class="fas fa-step-backward"></i>
+			<i class="far fa-pause-circle" id="circle"></i>
+			<i class="fas fa-step-forward"></i>
+			<i class="fas fa-redo"></i>
+		</div>
+		<div class="time-line">
+			<span class="time">1:39</span>
+			<div class="time-bar">
+				<div class="fill-time">
+					<div></div>
+				</div>
+			</div>
+			<span class="time">4:44</span>
+		</div>
+		<div class="right-icon">
+			<i class="far fa-clipboard"></i>
+			<i class="fas fa-desktop"></i>
+			<i class="fas fa-volume-up"></i>
+			<div class="time-bar">
+				<div class="fill-time">
+					<div></div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div id="main-body">
+
+		<div id="image-slider">
+			<div class="slide side-image" id="left-image">
+				<img src="https://i.ytimg.com/vi/DZQFy2LN9Ew/maxresdefault.jpg">
+			</div>
+			<div class="slide" id="middle-image">
+				<img src="https://media.pitchfork.com/photos/5debe781cade48000818ecce/2:1/w_2560%2Cc_limit/2019_songs.jpg">
+			</div>
+			<div class="slide side-image" id="right-image">
+				<img src="https://i.pinimg.com/originals/41/89/25/418925a8edd722a42b920bbaa0d361cd.jpg">
+			</div>
+		</div>
+
+	</div>
+	<aside class="asideinmain">
+			<nav class="aside-nav">
+				<span>Playlist</span>
+				<div class="dropdown">
+					<button class="dropbtn">Queue&nbsp;&nbsp;&nbsp;<i class="fas fa-chevron-down"></i></button>
+					<div class="dropdown-content">
+					    <a href="main.html">Home</a>
+					    <a href="#">Favourite Songs</a>
+					</div>
+				</div>
+			</nav>
+			<div id="aside-content">
+				<div class="song-in-queue">
+					<span class="queue-no"><i class="fas fa-align-center"></i></span>
+					<div class="container">
+						<img src="https://m.media-amazon.com/images/I/71fIkwuck0L._SS500_.jpg">
+						<div class="overlay">
+						    <a href="#" class="icon" title="play">
+						    	<i class="fas fa-play"></i>
+						  	</a>
+						</div>
+					</div>
+					<div class="song-left-detail">
+						<span>The Box</span>
+						<span class="queue-artist">Roddy&nbsp;Ricch</span>
+					</div>
+					<i class="far fa-heart"></i>
+				</div>
+				<div class="song-in-queue">
+					<span class="queue-no">02</span>
+					<div class="container">
+						<img src="https://m.media-amazon.com/images/I/81uQ-u7lLNL._SS500_.jpg">
+						<div class="overlay">
+						    <a href="#" class="icon" title="play">
+						    	<i class="fas fa-play"></i>
+						  	</a>
+						</div>
+					</div>
+					<div class="song-left-detail">
+						<span>Blinding Lights</span>
+						<span class="queue-artist">The&nbsp;Weeknd</span>
+					</div>
+					<i class="far fa-heart"></i>
+				</div>
+				<div class="song-in-queue">
+					<span class="queue-no">03</span>
+					<div class="container">
+						<img src="https://pyxis.nymag.com/v1/imgs/848/851/4305fb42b7d9f5533ac9b8cb054c42f500-ariana-grande-album-review.rsquare.w700.jpg">
+						<div class="overlay">
+						    <a href="#" class="icon" title="play">
+						    	<i class="fas fa-play"></i>
+						  	</a>
+						</div>
+					</div>
+					<div class="song-left-detail">
+						<span>Positions</span>
+						<span class="queue-artist">Ariana&nbsp;Grande</span>
+					</div>
+					<i class="far fa-heart"></i>
+				</div>
+				<div class="song-in-queue">
+					<span class="queue-no">04</span>
+					<div class="container">
+						<img src="https://i1.sndcdn.com/artworks-1f1W5s5rKzn9HWMC-cFyvOA-t500x500.jpg">
+						<div class="overlay">
+						    <a href="#" class="icon" title="play">
+						    	<i class="fas fa-play"></i>
+						  	</a>
+						</div>
+					</div>
+					<div class="song-left-detail">
+						<span>Someone Someday</span>
+						<span class="queue-artist">Subspace,&nbsp;Adeline&nbsp;Um</span>
+					</div>
+					<i class="far fa-heart"></i>
+				</div>
+				<div class="song-in-queue">
+					<span class="queue-no">05</span>
+					<div class="container">
+						<img src="https://upload.wikimedia.org/wikipedia/en/0/09/Drivers_License_by_Olivia_Rodrigo.png">
+						<div class="overlay">
+						    <a href="#" class="icon" title="play">
+						    	<i class="fas fa-play"></i>
+						  	</a>
+						</div>
+					</div>
+					<div class="song-left-detail">
+						<span>Drivers License</span>
+						<span class="queue-artist">Olivia&nbsp;Rodrigo</span>
+					</div>
+					<i class="far fa-heart"></i>
+				</div>
+				<div class="song-in-queue">
+					<span class="queue-no">06</span>
+					<div class="container">
+						<img src="https://i.kfs.io/album/global/22380148,0v1/fit/500x500.jpg">
+						<div class="overlay">
+						    <a href="#" class="icon" title="play">
+						    	<i class="fas fa-play"></i>
+						  	</a>
+						</div>
+					</div>
+					<div class="song-left-detail">
+						<span>Cassius</span>
+						<span class="queue-artist">Elijah&nbsp;Seabrook</span>
+					</div>
+					<i class="far fa-heart"></i>
+				</div>
+				<div class="song-in-queue">
+					<span class="queue-no">07</span>
+					<div class="container">
+						<img src="https://pbs.twimg.com/media/EwUTAw1VEAYKHAJ.jpg">
+						<div class="overlay">
+						    <a href="#" class="icon" title="play">
+						    	<i class="fas fa-play"></i>
+						  	</a>
+						</div>
+					</div>
+					<div class="song-left-detail">
+						<span>Suddenly</span>
+						<span class="queue-artist">Gabe&nbsp;James</span>
+					</div>
+					<i class="far fa-heart"></i>
+				</div>
+				<div class="song-in-queue">
+					<span class="queue-no">08</span>
+					<div class="container">
+						<img src="https://www.genius-lyrics.com/wp-content/uploads/2021/02/Whats-Next-300x300.jpg">
+						<div class="overlay">
+						    <a href="#" class="icon" title="play">
+						    	<i class="fas fa-play"></i>
+						  	</a>
+						</div>
+					</div>
+					<div class="song-left-detail">
+						<span>What's Next</span>
+						<span class="queue-artist">Drake</span>
+					</div>
+					<i class="far fa-heart"></i>
+				</div>
+				<div class="song-in-queue">
+					<span class="queue-no">09</span>
+					<div class="container">
+						<img src="https://media.thehypemagazine.com/wp-content/uploads/2021/03/unnamed-63.jpg">
+						<div class="overlay">
+						    <a href="#" class="icon" title="play">
+						    	<i class="fas fa-play"></i>
+						  	</a>
+						</div>
+					</div>
+					<div class="song-left-detail">
+						<span>Sober</span>
+						<span class="queue-artist">Camryn&nbsp;Levert</span>
+					</div>
+					<i class="far fa-heart"></i>
+				</div>
+				<div class="song-in-queue">
+					<span class="queue-no"><i class="fas fa-align-center"></i></span>
+					<div class="container">
+						<img src="https://i.pinimg.com/280x280_RS/2c/6d/c6/2c6dc67bef6d1199c1154f65a19beda4.jpg">
+						<div class="overlay">
+						    <a href="#" class="icon" title="play">
+						    	<i class="fas fa-play"></i>
+						  	</a>
+						</div>
+					</div>
+					<div class="song-left-detail">
+						<span>Sway</span>
+						<span class="queue-artist">Mjanja,&nbsp;Keana</span>
+					</div>
+					<i class="far fa-heart"></i>
+				</div>
+				<div class="song-in-queue">
+					<span class="queue-no">11</span>
+					<div class="container">
+						<img src="https://i.kfs.io/album/global/76932650,0v1/fit/500x500.jpg">
+						<div class="overlay">
+						    <a href="#" class="icon" title="play">
+						    	<i class="fas fa-play"></i>
+						  	</a>
+						</div>
+					</div>
+					<div class="song-left-detail">
+						<span>Temporary</span>
+						<span class="queue-artist">Kiri&nbsp;T</span>
+					</div>
+					<i class="far fa-heart"></i>
+				</div>
+
+			</div>
+		</aside>
+	
+
+	<div id="content">
+		<div id="latest-release">
+			<heading>
+				<h2 class="type-heading">Latest Release</h2>
+			</heading>
+			<div class="flex">
+				<div class="latest-song">
+					<div class="container">
+						<img src="https://media1.popsugar-assets.com/files/thumbor/epMWjxQbyhB1ELO8gKQrFlvkzfM/0x192:1350x1542/fit-in/1200x630/filters:format_auto-!!-:strip_icc-!!-/2021/03/11/903/n/1922283/00486ba4604a8065a9de70.50909732_/i/maroon-5-megan-thee-stallion-beautiful-mistakes-song.png">
+						<div class="overlay">
+						    <a href="#" class="icon" title="play">
+						    	<i class="fas fa-play"></i>
+						  	</a>
+						</div>
+					</div>
+					<div class="left-detail">
+					<span class="song-name">B. Mistakes</span>
+					<span class="date">MAR 3,2021</span>
+					</div>
+					<div class="right-detail">
+					<span class="three-dot"><i class="fas fa-ellipsis-h"></i></span>
+					<span class="song-time">4:44</span>
+					</div>
+				</div>
+				<div class="latest-song">
+					<div class="container">
+						<img src="https://upload.wikimedia.org/wikipedia/en/a/a8/Dua_Lipa_-_We%27re_Good_cover_art.png">
+						<div class="overlay">
+						    <a href="#" class="icon" title="play">
+						    	<i class="fas fa-play"></i>
+						  	</a>
+						</div>
+					</div>
+					<div class="left-detail">
+					<span class="song-name">We're Good</span>
+					<span class="date">FEB 11,2021</span>
+					</div>
+					<div class="right-detail">
+					<span class="three-dot"><i class="fas fa-ellipsis-h"></i></span>
+					<span class="song-time">4:44</span>
+					</div>
+				</div>
+				<div class="latest-song">
+					<div class="container">
+					<img src="https://i2.wp.com/wiseloaded.com/wp-content/uploads/2021/03/drake-whats-next-artwork.jpg?fit=700%2C700&ssl=1">
+					<div class="overlay">
+						    <a href="#" class="icon" title="play">
+						    	<i class="fas fa-play"></i>
+						  	</a>
+						</div>
+					</div>
+
+					<div class="left-detail">
+					<span class="song-name">What's next</span>
+					<span class="date">JAN 20,2023</span>
+					</div>
+					<div class="right-detail">
+					<span class="three-dot"><i class="fas fa-ellipsis-h"></i></span>
+					<span class="song-time">4:44</span>
+					</div>
+				</div>
+				<div class="latest-song">
+					<div class="container">
+					<img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0d/Justin_Bieber_-_Anyone.png/220px-Justin_Bieber_-_Anyone.png">
+					<div class="overlay">
+						    <a href="#" class="icon" title="play">
+						    	<i class="fas fa-play"></i>
+						  	</a>
+						</div>
+					</div>
+					<div class="left-detail">
+					<span class="song-name">Anyone</span>
+					<span class="date">JAN 1,2021</span>
+					</div>
+					<div class="right-detail">
+					<span class="three-dot"><i class="fas fa-ellipsis-h"></i></span>
+					<span class="song-time">4:44</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="popular-artist">
+			<heading>
+				<h2 class="type-heading">Popular Artists</h2>
+			</heading>
+			<div class="flex space-around">
+				<div class="artist ">
+					<a href="dualipa.html">
+						<img src="https://pbs.twimg.com/profile_images/1360591340204158976/eVqBdWTX_400x400.jpg">
+						<div class="artist-name">Dua Lipa</div>
+					</a>
+				</div>
+				<div class="artist">
+					<a href="coldplay.html">
+						<img src="https://miro.medium.com/max/471/0*_YcTdWCkDbiz2-yC.png">
+						<div class="artist-name">ColdPlay</div>
+					</a>
+				</div>
+				<div class="artist">
+					<a href="edsheeran.html">
+						<img src="https://i2.wp.com/hkpub.net/wp-content/uploads/2019/07/Ed-Sheeran-Press-Photo-2-Credit-Mark-Surridge-crop.jpg?fit=1024%2C911&ssl=1">
+						<div class="artist-name">Ed Sheeran</div>
+					</a>
+				</div>
+				<div class="artist">
+					<a href="harrystyles.html">
+						<img src="https://pyxis.nymag.com/v1/imgs/750/59d/893b8b62db2130a723624447a20f7b82aa-harry-styles.rsquare.w1200.jpg">
+						<div class="artist-name">Harry Styles</div>
+					</a>
+				</div>
+				<div class="artist">
+					<a href="billie_elish.html">
+						<img src="https://thumbs.gfycat.com/MeekCloseBlackfootedferret-poster.jpg">
+						<div class="artist-name">Billie Eilish</div>
+					</a>
+				</div>
+				<div class="artist">
+					<a href="weeknd.html">
+						<img src="https://thewichitan.com/wp-content/uploads/2020/03/ab67616d0000b27380e1e80874a5b25317c380c5.jpg">
+						<div class="artist-name">The Weeknd</div>
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div id="music-station-box">
+			<div class="flex space-around">
+				<div id="station-logo">
+					Music Station
+				</div>
+				
+				<div class="station">
+					<span>Love</span>
+					<img src="https://images.unsplash.com/photo-1455582916367-25f75bfc6710?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1000&q=80">
+				</div>
+				<div class="station">
+					<span>Radio</span>
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyorin3mUEdR4Y356gR34Ta0oSCT_3EPLKXw&usqp=CAU">
+				</div>
+				<div class="station">
+					<span>Chill</span>
+					<img src="https://res.cloudinary.com/twenty20/private_images/t_watermark-criss-cross-10/v1443413928000/photosp/1c33fc98-2e6d-4073-89ba-d4b950c4cae7/stock-photo-apple-book-coffee-table-glasses-computer-bible-macbook-white-macbook-1c33fc98-2e6d-4073-89ba-d4b950c4cae7.jpg">
+				</div>
+				<div class="station">
+					<span>Workout</span>
+					<img src="https://static.toiimg.com/photo/msid-78094141/78094141.jpg">
+				</div>
+				<div class="station">
+					<span>Rock</span>
+					<img src="https://www.liveabout.com/thmb/C_cBVWMY7lQWxUm40VhYNV4uPDs=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/bon-jovi-jon-bon-jovi-richie-sambora-and-hugh-mcdonald-live-at-nakano-sun-plaza-593352577-5b560a3946e0fb0037dd45a7.jpg">
+				</div>
+				<div class="station">
+					<span>Pop</span>
+					<img src="https://static01.nyt.com/images/2018/12/30/arts/30yearend-pop2/merlin_147857643_8e0c5c65-4549-4946-b51d-49425b9dcf24-articleLarge.jpg?quality=75&auto=webp&disable=upscale">
+				</div>
+			</div>
+		</div>
+		<div id="music-station2">
+			<div class="flex space-between">
+				<div class="station2">
+					<span>Party</span>
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlMHX5lX4h5dtltDN1N0kSije8Cqe_aUYKdJDitBLyl6xD4Vgj8kpsZa-oRQs6BF0IJwM&usqp=CAU">
+				</div>
+				<div class="station2">
+					<span>Electronic</span>
+					<img src="https://celebzmagazine.com/wp-content/uploads/2020/02/dj-turntables-02-2017-billboard-1548.jpg">
+				</div>
+				<div class="station2">
+					<span>Road Trip</span>
+					<img src="https://www.travelersjoy.com/blog/honeymoon_road_trip_1.jpg">
+				</div>
+			</div>
+		</div>
+		<div id="latest-english">
+			<heading>
+				<h2 class="type-heading">Latest English</h2>
+			</heading>
+			<div class="flex space-around">
+				<div class="latest-english-song">
+					<div class="container">
+					<img src="https://1.bp.blogspot.com/-PicpFvJgq-o/YEhy4_iX2bI/AAAAAAAAC5A/bkqz0EIkiaQorj9miVNI1oSCSLC3N7AywCLcBGAsYHQ/s323/Nick-Jonas-Spaceman-Album.jpg">
+					<div class="overlay">
+						    <a href="#" class="icon" title="play">
+						    	<i class="fas fa-play"></i>
+						  	</a>
+						</div>
+					</div>
+					<h1>2druck</h1>
+					<h2>MAR 12,2021</h2>
+				</div>
+				<div class="latest-english-song">
+					<div class="container">
+					<img src="https://www.the360mag.com/wp-content/uploads/2021/01/1dc579ce-f3cb-4580-9de3-c39076bbfe78.jpg">
+					<div class="overlay">
+						    <a href="#" class="icon" title="play">
+						    	<i class="fas fa-play"></i>
+						  	</a>
+						</div>
+					</div>
+					<h1>Boyshit</h1>
+					<h2>FEB 11,2021</h2>
+				</div>
+				<div class="latest-english-song">
+					<div class="container">
+					<img src="https://i1.sndcdn.com/artworks-URqqfqIdxO9JAisl-3tFbSw-t500x500.jpg">
+					<div class="overlay">
+						    <a href="#" class="icon" title="play">
+						    	<i class="fas fa-play"></i>
+						  	</a>
+						</div>
+					</div>
+					<h1>Paradise</h1>
+					<h2>FEB 7,2021</h2>
+				</div>
+				<div class="latest-english-song">
+					<div class="container">
+					<img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/zayn-malik-vibez-1610710187.jpg?crop=0.488xw:0.976xh;0,0.0238xh&resize=640:*">
+					<div class="overlay">
+						    <a href="#" class="icon" title="play">
+						    	<i class="fas fa-play"></i>
+						  	</a>
+						</div>
+					</div>
+					<h1>Vibez</h1>
+					<h2>JAN 26,2021</h2>
+				</div>
+				<div class="latest-english-song">
+					<div class="container">
+					<img src="https://i1.sndcdn.com/artworks-83rBi4Jn11gHdKgJ-xijWDQ-t500x500.jpg">
+					<div class="overlay">
+						    <a href="#" class="icon" title="play">
+						    	<i class="fas fa-play"></i>
+						  	</a>
+						</div>
+					</div>
+					<h1>Afterglow</h1>
+					<h2>DEC 8,2020</h2>
+				</div>
+				<div class="latest-english-song">
+					<div class="container">
+					<img src="https://resources.tidal.com/images/582bb31b/9b93/4789/b0bd/7e0422d0b059/640x640.jpg">
+					<div class="overlay">
+						    <a href="#" class="icon" title="play">
+						    	<i class="fas fa-play"></i>
+						  	</a>
+						</div>
+					</div>
+					<h1>At My Worst</h1>
+					<h2>DEC 1,2020</h2>
+				</div>
+				<div class="latest-english-song">
+					<div class="container">
+					<img src="https://upload.wikimedia.org/wikipedia/en/8/8d/Holy_-_Justin_Bieber.png">
+					<div class="overlay">
+						    <a href="#" class="icon" title="play">
+						    	<i class="fas fa-play"></i>
+						  	</a>
+						</div>
+					</div>
+					<h1>Holy</h1>
+					<h2>NOV 10,2020</h2>
+				</div>
+			</div>
+		</div>
+		<div id="latest-hindi">
+			<heading>
+				<h2 class="type-heading">Latest Hindi</h2>
+			</heading>
+			<div class="flex space-around">
+				<div class="latest-english-song">
+					<div class="container">
+					<img src="https://images.djpunjab.pro/cover/481860/Panghat-Roohi.jpg">
+					<div class="overlay">
+						    <a href="#" class="icon" title="play">
+						    	<i class="fas fa-play"></i>
+						  	</a>
+						</div>
+					</div>
+					<h1>Panghat</h1>
+					<h2>MAR 12,2021</h2>
+				</div>
+				<div class="latest-english-song">
+					<div class="container">
+					<img src="https://images.genius.com/c4ee17732c3a13b96a997aa651019d34.1000x1000x1.jpg">
+					<div class="overlay">
+						    <a href="#" class="icon" title="play">
+						    	<i class="fas fa-play"></i>
+						  	</a>
+						</div>
+					</div>
+					<h1>BurjKhalifa</h1>
+					<h2>FEB 11,2021</h2>
+				</div>
+				<div class="latest-english-song">
+					<div class="container">
+					<img src="http://a10.gaanacdn.com/images/albums/99/3439699/crop_480x480_3439699.jpg">
+					<div class="overlay">
+						    <a href="#" class="icon" title="play">
+						    	<i class="fas fa-play"></i>
+						  	</a>
+						</div>
+					</div>
+					<h1>Baby Girl</h1>
+					<h2>FEB 7,2021</h2>
+				</div>
+				<div class="latest-english-song">
+					<div class="container">
+					<img src="https://m.media-amazon.com/images/M/MV5BMDRjZjQyOTQtNjFjNS00YThjLWJkODAtNTIyNDgyYTI0ZjkwXkEyXkFqcGdeQXVyMTA5NzIyMDY5._V1_.jpg">
+					<div class="overlay">
+						    <a href="#" class="icon" title="play">
+						    	<i class="fas fa-play"></i>
+						  	</a>
+						</div>
+					</div>
+					<h1>Pachtaoge</h1>
+					<h2>JAN 26,2021</h2>
+				</div>
+				<div class="latest-english-song">
+					<div class="container">
+					<img src="https://covers.djpunjab.pro/image/491512/Libaas.jpg">
+					<div class="overlay">
+						    <a href="#" class="icon" title="play">
+						    	<i class="fas fa-play"></i>
+						  	</a>
+						</div>
+					</div>
+					<h1>Libaas</h1>
+					<h2>DEC 8,2020</h2>
+				</div>
+				<div class="latest-english-song">
+					<div class="container">
+					<img src="https://a10.gaanacdn.com/gn_img/albums/81l3Me3rMx/1l3MYe7e3r/size_xxl.jpg">
+					<div class="overlay">
+						    <a href="#" class="icon" title="play">
+						    	<i class="fas fa-play"></i>
+						  	</a>
+						</div>
+					</div>
+					<h1>Dil Tod Ke</h1>
+					<h2>DEC 1,2020</h2>
+				</div>
+				<div class="latest-english-song">
+					<div class="container">
+					<img src="https://a10.gaanacdn.com/gn_img/song/0wrb4qNKLg/rb4Ny6yX3L/size_xxl_1603348858.webp">
+					<div class="overlay">
+						    <a href="#" class="icon" title="play">
+						    	<i class="fas fa-play"></i>
+						  	</a>
+						</div>
+					</div>
+					<h1>Care Ni Krda</h1>
+					<h2>NOV 10,2020</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+
+</body>
+</html>

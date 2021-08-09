@@ -1,0 +1,973 @@
+/*----PLEASE HOVER ON BOTTOMS SCREEN TO SEE THE BOTTOM MUSIC PLAYER--*/
+
+body{
+	background-color: #0C1027;
+	font-family: sans-serif;
+	padding-bottom: 80px;
+}
+
+
+/*----body header # horizontal naivation--*/
+#body-header{
+	background-color: rgb(0, 0, 0, 0.7);
+	position: relative;
+	box-sizing: border-box;
+	position: fixed;
+	width: 102%;
+	margin-top: -20px;
+	padding-bottom: 12px;
+	padding-left: 3%;
+	margin-left: -1%;
+	margin-right: 1%;
+	z-index: 100;
+}
+#body-header i{
+	display: inline-block;
+	color: white;
+	vertical-align: middle;
+}
+.horizontal-list {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+    margin-top: 20px;
+}
+
+
+#logo{
+	font-size: 2rem;
+}
+.horizontal-list li {
+    display: inline-block;
+    margin-right: 1%;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+
+.horizontal-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-menu li a {
+    transition: color 0.5s;
+}
+
+.nav-menu li a:hover {
+    color: cyan;
+}
+
+#searchbar{
+	margin-left: 40vw;
+	text-align: right;
+}
+#searchbar form{
+	border-radius: 10px;
+	background-color: rgb(0,0,0,0.6);
+	border:1px solid darkgrey;
+}
+#searchbar label{
+	display: inline-block;
+	margin-left: 8px;
+	font-size: 1rem;
+	vertical-align: middle;
+}
+#searchbar div{
+	margin-top: -4vh;
+	margin-right: -7vw;
+}
+
+#searchbar button{
+	background-color: transparent;
+	text-decoration: none;
+	display: inline-block;
+	border:none;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+#searchbar input{
+	text-decoration: none;
+	color: lightgrey;
+	width: 28vw;
+	outline: none;
+	font-size: 1rem;
+	padding:5px;
+	background-color: transparent;
+	border:0px;
+	
+}
+#searchbar i{
+	color: #93A8B3;
+}
+#body-header #fav{
+	display: inline-block;
+	font-size: 1rem;
+	margin-left: 3%;
+}
+#bell-icon{
+	color: #93A8B3 !important; 
+}
+#user-icon{
+	color: #93A8B3 !important;
+}
+
+/*--- end of body header navigation---*/
+/*---MAIN BODY----*/
+/*----image-slider---*/
+
+#main-body{
+	width: 85%;
+	display: inline-block;
+	position: relative;
+	margin-top: 13vh;
+	margin-left: 1.5%;
+	height: contain;
+	margin-bottom: 18vh;
+}
+
+#image-slider{
+	display: inline-block;
+	width: 100%;
+	margin-bottom: 6%;
+}
+
+#image-slider div{
+	display: inline-block;
+	position: absolute;
+	overflow: hidden;
+
+}
+
+.slide img{
+	width: 100%;
+	height: auto;
+}
+
+div#middle-image{
+	margin-left: 12vw;
+	margin-top: -5vh;
+	width:45%;
+	z-index: 2;
+	box-shadow: 0px 0px 8px 10px rgba(0, 0, 0, 0.4); 
+	transition: all .5s ease-in-out;
+}
+div#left-image{
+	margin-left: 3vw;
+}
+div#right-image{
+	margin-left: 35vw;	
+}
+
+div.side-image{
+	width: 30%;
+	transition: all .5s ease-in-out;
+}
+
+
+
+div#middle-image:hover{
+	transform: scale(1.1,1.1);
+	box-shadow: 0px 0px 7px 8px rgba(0, 0, 0, 0.4); 
+}
+
+div#left-image:hover{
+	transform: scale(1.1,1.1);
+	box-shadow: 0px 0px 7px 8px rgba(0, 0, 0, 0.4); 
+	z-index: 5;
+}
+div#right-image:hover{
+	transform: scale(1.1,1.1);
+	box-shadow: 0px 0px 7px 8px rgba(0, 0, 0, 0.4); 
+	z-index: 5;
+}
+/*-----end of image slider---*/
+
+/*----start of aside--*/
+aside{
+	display: inline-block;
+	position: absolute;
+	width: 28%;
+	min-width: 300px;
+	margin-left: -17%;
+	margin-top: 8%;
+	vertical-align: top;
+
+}
+.aside-nav{
+	margin-bottom: 40px;
+}
+.aside-nav span{
+	color: white;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+.dropbtn {
+	color: cyan;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 50%;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  margin-left: -120px;
+  min-width: 180px;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  height: 1.2rem;
+  font-size: .8rem;
+  padding: 8px 10px;
+  display: block;
+  text-align: center;
+  color: black;
+  transition: all .5s ease-in-out;
+}
+.dropbtn{
+	height: 1rem;
+	font-size: .8rem;
+	background-color: transparent;
+	outline: none;
+}
+.dropbtn i{
+	font-size: .6rem;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: transparent;
+	font-size: 1rem;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/*--favrourite in header nav---*/
+#fav .dropbtn{
+	color: white;
+	font-size: .9rem;
+	height: 1.5rem;
+}
+#fav .dropdown-content{
+	background-color: transparent;
+	margin-left: -10px;
+}
+#fav .dropdown-content a{
+	background-color: rgb(255,255,255,0.09);
+	color: white;
+	font-weight: 700;
+	
+	transition: all .5s ease-in-out;
+}
+/**----song in queue--*/
+.song-in-queue{
+	position: relative;
+	color: white;
+	height: 60px;
+	vertical-align: middle;
+	margin-bottom: 20px;
+}
+.song-in-queue .container{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+}
+.song-in-queue .fa-play{
+	font-size: 15px;
+}
+.song-in-queue img{
+	position: block
+	vertical-align: middle;
+	border-radius: 3px;
+	width: 100%;
+}
+.song-left-detail{
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 2%;
+	display: inline-block;
+
+}
+.queue-no{
+	margin-top: -40px;
+	font-size: 0.7rem;
+	color: grey;
+	margin-right: 2%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.queue-no i{
+	transform: rotate(90deg);
+	color: cyan;
+}
+.song-left-detail span{
+	display: block;
+	font-size: .8rem;
+	font-weight: 600;
+	height: 1rem;
+}
+.queue-artist{
+	color: grey;
+	font-size: 11px !important;
+}
+.fa-heart{
+	position: absolute;
+	display: block;
+	margin-top: 15px;
+	margin-left: 55%;
+	vertical-align: middle;
+}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+
+/*-----latest release----*/
+#content{
+	display: inline-block;
+	width: 60%;
+	margin-left: 4%;
+	vertical-align: top;
+}
+#latest-release{
+	margin-bottom: 23px;
+}
+.type-heading{
+	margin-top: 50px;
+	font-size: 1.2rem;
+	color: white;
+}
+.flex{
+	display: flex;
+	align-content: center;
+	color: white;
+	flex-wrap: wrap;
+
+
+}
+.latest-song{
+	width: 40%;
+	min-width: 430px;
+	height: 120px;
+	margin-bottom: 20px;
+}
+.latest-song img{
+	position: absolute;
+	width: 120px;
+	height: 120px;
+}
+
+.latest-song span{
+	display: block;
+	height: 1.7rem;
+}
+.left-detail{
+	position: absolute;
+	margin-left:140px;
+	margin-top: -100px;
+}
+.right-detail{
+	position: absolute;
+	margin-top: -125px;
+	margin-left:320px;
+}
+.right-detail i{
+	margin-left: 6px;
+}
+
+.song-name{
+	font-weight: 600;
+	font-size: 1rem;
+	letter-spacing: 1px;
+}
+.date,.three-dot{
+	color: grey;
+	font-family: "Lucida Console", "Courier New", monospace;
+}
+/*----end of latest release---*/
+/*----popular artist---*/
+.space-between{
+	justify-content: space-between;
+}
+.artist{
+	width: 15%;
+	min-width: 120px;
+	text-align: center;
+	font-family: monospace;
+	font-size: 1.3rem;
+	transition: all 1s ease-in-out;
+}
+.artist a{
+	text-decoration: none;
+	color: grey;
+}
+.artist img{
+	border-radius: 50%;
+	width: 93%;
+	height: 75%;
+	
+}
+.artist:hover{
+	transform: scale(1.2,1.2);
+}
+/*--end of popular artist---*/
+/*--start of music station box--*/
+#music-station-box{
+	background-color: #101642;
+	text-align: center;
+	margin-bottom: 20px;
+	padding-bottom: 5px;
+	padding-top: .2px;
+}
+
+.space-around{
+	justify-content: space-around;
+}
+.station{
+	position: relative;
+	margin-top: 25px;
+	width: 11%;
+	min-width: 90px;
+	text-align: center;
+	transition: all 0.7s ease-in-out;
+}
+.station:hover{
+	transform: scale(1.2,1.2);
+}
+.station img{
+	border-radius: 50%;
+	opacity: 0.6;
+	width: 90px;
+	height: 90px;
+
+}
+#station-logo{
+	color: white;
+	margin-top: 10px;
+	font-size: 1.5rem;
+	text-align: middle;
+	width: 100%;
+}
+
+.station span{
+	position: absolute;
+	top: 40%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	z-index: 5;
+}
+/*-----end of stations---*/
+/*--start of station part2---*/
+
+.station2{
+	position: relative;
+	width: 31.5%;
+
+	overflow: hidden;
+	text-align: center;
+	
+}
+.station2 img{
+	width: 100%;
+}
+.station2 span{
+	position: absolute;
+	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	font-size: 1.4rem;
+  	font-weight: 500;
+	z-index: 5;
+	transition: all  0.27s ease-in-out;
+}
+.station2 span:hover{
+	font-size: 2rem;
+}
+/*---end of station part2--*/
+/*---start of latest english---*/
+
+.latest-english-song{
+	width: 13%;
+}
+.latest-english-song img{
+	width: 100%;
+}
+.latest-english-song h1{
+	color: lightgrey;
+	height: 0.8rem;
+	font-size: 0.8rem;
+}
+.latest-english-song h2{
+	color: grey;
+	font-size: 0.7rem;
+}
+/*-----end of latest english--*/
+
+/*---shadow play button on images--*/
+.container {
+  position: relative;
+
+}
+#latest-release .container{
+	width: 120px;
+	height: 120px;
+
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition:all .7s ease-in-out;
+  background-color: rgb(0,0,0,0.4);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.icon {
+  color: white;
+  font-size: 28px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.fa-play:hover {
+  color: #eee;
+}
+
+/*----footer bottom music player---*/
+
+#body-footer{
+	opacity: 1;
+	background-color: rgb(0, 0, 0, 0.85);
+	box-sizing: border-box;
+	position: fixed;
+	width: 102%;
+	bottom: -2vh;
+	padding-bottom: 1.5%;
+	padding-top:.5vh;
+	padding-left: 3%;
+	margin-left: -1%;
+	margin-right: 1%;
+
+	z-index: 100;
+	transition: transform 0.8s ease-in-out;
+}
+/*
+bellow code is for invation to show up the bottom music player on hover//
+
+#body-footer:hover{
+	opacity: 1;
+	transform: translateY(-52px);
+}*/
+@keyframes rotate{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+
+#body-footer img{
+	margin-top: 3px;
+	margin-left: 2%;
+	width: 45px;
+	border-radius: 50%;
+	border:2px solid darkgrey;
+	animation: rotate 2s infinite linear;
+}
+
+div.cd-details{
+	position: absolute;
+	display: inline-block;
+	margin-top: 12px;
+	margin-left: 1%;
+	color: lightgrey;
+	font-size: .9rem;
+	overflow: hidden;
+}
+
+.cd-details span{
+	display: block;
+	height: 1.2rem
+}
+.cd-details .artist{
+	font-size: 1rem;
+}
+div.left-icon{
+	display: inline-block;
+	position: absolute;
+	color: grey;
+	margin-left: 7%;
+
+}
+#body-footer .fa-ban{
+	margin-left: 80px;
+	margin-top: 15px;
+}
+
+div.middle-icon{
+	display: inline-block;
+	position: absolute;
+	color: lightgrey;
+	width: 40%;
+	margin-left: 30%;
+	vertical-align: middle;
+}
+.middle-icon i{
+	display: inline-block;
+	font-size: 0.8rem;
+	margin-left: 4%;
+	margin-right: 4%;
+	vertical-align: middle;
+}
+#circle{
+	font-size: 1.7rem;
+}
+.time-line{
+	display: inline-block;
+	position: absolute;
+	color: white;
+	margin-left: 25%;
+	margin-top: 33px;
+	width: 100%;
+	font-size: .8rem;
+	color: lightgrey;
+}
+.time-bar{
+	display: inline-block;
+	position: relative;
+	width: 28%;
+	height: 0px;
+	border-top: 4px solid grey;
+	margin-left: 2%;
+	margin-right: 2%;
+	vertical-align: middle;
+}
+.fill-time{
+	position: relative;
+	width: 20%;
+	border-top:6px solid cyan;
+	margin-top: -5px;
+	transition: all 2s ease-in-out;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+}
+.fill-time:hover{
+	width: 70%;
+}
+.fill-time div{
+	position: absolute;
+	top: -9px;
+	height: 13px;
+	width: 13px;
+	border-radius: 50%;
+	right: 0%;
+	background: lightgrey;
+}
+
+.right-icon{
+	display: inline-block;
+	position: absolute;
+	color: grey;
+	margin-left: 70%;
+	margin-top: 20px;
+	width: 20%;
+}
+.right-icon i{
+	margin-left: 2%;
+	margin-right: 2%;
+}
+.right-icon .time-bar{
+	margin-left: -1%;
+	width: 60px;
+}
+.right-icon .fill-time{
+	transition: 0s;
+	width: 30px;
+}
+
+/*-----end of footer music player---*/
+
+/*-----start of sub styles for new html links---*/
+
+.left-half{
+	display: inline-block;
+	margin-left: 5%;
+	width: 60%;
+	margin-top: 7%;
+	background-color: #141B41;
+}
+.right-half{
+	display: inline-block;
+	position: relative;
+	width: 30%;
+	margin-left: 2%;
+	height: 200px;
+	margin-top: 7%;
+	vertical-align: top;
+}
+.intro-of-artist{
+	position: sticky;
+}
+.image-container{
+	display: inline-block;
+	position: relative;
+	width: 40%;
+	border-bottom-left-radius: 30%;
+	border-bottom-right-radius: 30%;
+	overflow: hidden;
+	box-shadow: inset 0px -30px 30px 10px #141B41;
+}
+.artist-image{
+	width: 100%;
+	z-index: -2;
+	position: relative;
+	height: auto;
+	opacity: 0.6;
+	
+}
+.artist-details{
+	display: inline-block;
+	position: relative;
+	width: 52%;
+	vertical-align: top;
+	margin-left: 3.5%;
+	margin-top: 3rem;
+}
+
+.artist-details span{
+	display: block;
+}
+.name-of-the-artist{
+	color: white;
+	font-weight: 700;
+	font-size: 2rem;
+}
+.country{
+	font-size: 1rem;
+	line-height: 1.6rem;
+	color: #AAACBA;
+}
+
+.details-of-the-artist{
+	margin-top: 10px;
+	font-size: 0.78rem;
+	word-spacing: 1px;
+	line-height: 1.1rem;
+}
+
+.followers{
+	position: absolute;
+	margin-left: 82%;
+	margin-top: 20px;
+	color: #AAACBA;
+	font-size: .8rem;
+}
+
+.play-all{
+	display: inline-block;
+	padding:8px 45px;
+	font-size: .9rem;
+	font-weight: 500;
+	background-image: linear-gradient(to right,#3825B0,#C448E0);
+	color: white;
+	margin-top: 50px;
+}
+.play-all:hover{
+	font-size: 1rem;
+}
+
+.follow{
+	display: inline-block;
+	color: lightgrey;
+	margin-left: 40px;
+	font-size: 0.9rem;
+}
+
+.follow:hover{
+	color: red;
+}
+
+.tracksalbums{
+	line-height: 2rem;
+	font-size: 0.75rem;
+	color: lightgrey;
+	letter-spacing: 0.5px;
+}
+
+.songs-of-artist{
+	padding: 30px 0px;
+	background-color: #0C1027;
+}
+.songs-of-artist .song-in-queue{
+	height: 70px;
+	background-color: rgb(255,255,255,0.07);
+}
+.songs-of-artist .queue-no{
+	margin-left: 12px;
+}
+.songs-of-artist .container{
+	margin-top: 9px;
+}
+.songs-of-artist .song-left-detail{
+	margin-top: 21px;
+}
+.songs-of-artist .fa-heart{
+	color: #AAACBA;
+	margin-left: 76%;
+	margin-top: 25px;
+}
+.fa-plus{
+	position: absolute;
+	margin-left: 82%;
+	margin-top: 25px;
+	color: #AAACBA;
+}
+
+.right-half #latest-release{
+	margin-top: -48px;
+}
+
+#latest-release .type-heading{
+	font-size: 2rem;
+}
+.type-heading span{
+	position: absolute;
+	font-size: 0.8rem;
+	color: grey;
+	margin-left: 19%;
+	margin-top: 10px;
+}
+
+#recently-played .type-heading{
+	font-size: 2rem;
+}
+#recently-played .type-heading span{
+	margin-left: 14%;
+}
+/*----responsiveness for device with max with 1024 i.e ipads and tablets---*/
+
+@media only screen and (max-device-width:1024px){
+	#main-body{
+		margin-bottom: 8vh !important;
+	}
+	#middle-image{
+		margin-top: -2vh !important;
+	}
+	#searchbar{
+		margin-left: 32vw;
+	}
+	#main-body{
+		margin-top: 7vh;
+	}
+	.artist{
+		margin:0px 10px;
+	}
+	.right-detail{
+		margin-left: 40%;
+	}
+	#body-footer{
+		bottom: 0vh;
+	}
+	aside{
+		margin-left: -16%;
+	}
+	aside .dropdown{
+		margin-left: 11vw;
+	}
+	.left-half{
+		width: 60vw;
+		margin-left:3%; 
+	}
+	.right-half .right-detail{
+		margin-left: 27vw;
+	}
+	.type-heading span{
+		margin-left: 6vw;
+	}
+	#recently-played .fa-heart{
+		margin-left: 20vw;
+	}
+}
+/*-----screen with max with-768px---*/
+@media only screen  and (max-device-width:768px){
+	#middle-image{
+		margin-left: 25vw !important;
+	}
+	#left-image{
+		margin-left: 10vw !important;
+	}
+	#right-image{
+		margin-left: 55vw !important;
+	}
+	.asideinmain{
+		position: relative;
+		display: block;
+		margin-left: 10vw;
+		width: 80vw;
+	}
+	.asideinmain .song-in-queue{
+		padding-top: 10px;
+		padding-left: 20px;
+		vertical-align: middle;
+		background-color: rgb(255,255,255,0.1);
+	}
+	.asideinmain .fa-heart{
+		margin-left: 80%;
+	}
+	#content{
+		width: 90vw;
+		margin-left: 4vw;
+	}
+	#searchbar{
+		margin-left: 28vw;
+	}
+	.asideinmain .dropdown{
+		margin-left: 75%;
+	}
+	#body-footer{
+		bottom: 0vh;
+	}
+	.left-half{
+		width: 90vw;
+		margin-top: 8vh;
+	}
+	.right-half{
+		width: 90vw;
+		margin-left: 7vw;
+	}
+	#recently-played{
+		width: 100%;
+	}
+	#recently-played .song-in-queue{
+		display: inline-block;
+		width: 40%;
+	}
+	#responsive{
+		margin-top: 96vh;
+	}
+
+}

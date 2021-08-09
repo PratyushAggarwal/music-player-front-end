@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Harry Styles</title>
+	<link rel="stylesheet" type="text/css" href="maincss.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+<body>
+	<header id="body-header">
+		<nav>
+			<ul class="horizontal-list text-center nav-menu">
+                <li>
+                    <i class="fas fa-headphones" id="logo"></i>
+                </li>
+                <li id="fav">
+                	<div class="dropdown">
+						<button class="dropbtn">FAVOURITES</button>
+						<div class="dropdown-content">
+						    <a href="main.html">Home</a>
+						    <a href="playlist.html">My Playlist</a>
+						    <a href="#recently-played">Recenly Played</a>
+						</div>
+					</div>
+                </li>
+                <li id="searchbar">
+                	<form action="" >
+                		<label for="search"><i class="fas fa-search"></i></label>
+                		<input type="text" name="search" placeholder="search...">
+                		<button type="submit"><i class="fas fa-microphone"></i></button>
+                	</form>
+                </li>
+                <li>
+                	<i class="fas fa-bell" id="bell-icon"></i>
+                </li>
+                <li>
+                	<i class="fas fa-user" id="user-icon"></i>
+                </li>
+            </ul>
+		</nav>
+	</header>
+	<footer id="body-footer">
+		<img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/peaky-blinders-1614180392.jpg">
+		<div class="cd-details">
+			<span>I'm Peaky blinder</span>
+			<span class="queue-artist">Otnicka</span>
+		</div>
+		<div class="left-icon">
+			<i class="far fa-heart"></i>
+			<i class="fas fa-ban"></i>
+		</div>
+		<div class="middle-icon">
+			<i class="fas fa-random"></i>
+			<i class="fas fa-step-backward"></i>
+			<i class="far fa-pause-circle" id="circle"></i>
+			<i class="fas fa-step-forward"></i>
+			<i class="fas fa-redo"></i>
+		</div>
+		<div class="time-line">
+			<span class="time">1:39</span>
+			<div class="time-bar">
+				<div class="fill-time">
+					<div></div>
+				</div>
+			</div>
+			<span class="time">4:44</span>
+		</div>
+		<div class="right-icon">
+			<i class="far fa-clipboard"></i>
+			<i class="fas fa-desktop"></i>
+			<i class="fas fa-volume-up"></i>
+			<div class="time-bar">
+				<div class="fill-time">
+					<div></div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<div class="left-half">
+		<div class="intro-of-artist">
+			<div class="image-container">
+			<img src="https://pyxis.nymag.com/v1/imgs/750/59d/893b8b62db2130a723624447a20f7b82aa-harry-styles.rsquare.w1200.jpg" class="artist-image">
+			</div>
+			<div class="artist-details">
+				<div  class="followers"><b>800</b> Followers</div>
+				<span class="name-of-the-artist">Harry Styles</span>
+				<span class="country"><b>English Singer</b></span>
+				<span class="details-of-the-artist country">Harry Styles is an English singer, songwriter, and actor. His musical career began in 2010 as a solo contestant on the British music competition series The X Factor. Following his elimination early on, he was brought back to join the boy band One Direction, which went on to become one of the best-selling boy bands of all time.</span>
+				<div class="play-all">Play All</div>
+				<div class="follow">Follow</div>
+				<div class="tracksalbums">247 Tracks | 128 Albums</div>
+			</div>
+		</div>
+		<div class="songs-of-artist">
+			<div class="song-in-queue">
+				<span class="queue-no">01</span>
+				<div class="container">
+					<img src="https://media.pitchfork.com/photos/605cc407d903156f6be111c3/master/w_1280%2Cc_limit/Demi-Lovato.jpg">
+					<div class="overlay">
+					    <a href="#" class="icon" title="play">
+					    	<i class="fas fa-play"></i>
+					  	</a>
+					</div>
+				</div>
+				<div class="song-left-detail">
+					<span>Dancing With The Devil</span>
+					<span class="queue-artist">Demi&nbsp;Lovato</span>
+				</div>
+				<i class="far fa-heart"></i>
+				<i class="fas fa-plus"></i>
+			</div>
+			<div class="song-in-queue">
+				<span class="queue-no"><i class="fas fa-align-center"></i></span>
+				<div class="container">
+					<img src="https://1.bp.blogspot.com/-d5k-grce9DI/YFwX4YoSn3I/AAAAAAAAC_s/s81lnYHKUYUvQ2PyUvWuDU_nQaUJ2uojACLcBGAsYHQ/s985/24kGoldn-El-Dorado-Album.jpg">
+					<div class="overlay">
+					    <a href="#" class="icon" title="play">
+					    	<i class="fas fa-play"></i>
+					  	</a>
+					</div>
+				</div>
+				<div class="song-left-detail">
+					<span>Love Or Lust</span>
+					<span class="queue-artist">24kGoldn</span>
+				</div>
+				<i class="far fa-heart"></i>
+				<i class="fas fa-plus"></i>
+			</div>
+			<div class="song-in-queue">
+				<span class="queue-no">03</span>
+				<div class="container">
+					<img src="https://i1.sndcdn.com/artworks-000640876012-c5r6fl-t500x500.jpg">
+					<div class="overlay">
+					    <a href="#" class="icon" title="play">
+					    	<i class="fas fa-play"></i>
+					  	</a>
+					</div>
+				</div>
+				<div class="song-left-detail">
+					<span>Watermelon Sugar</span>
+					<span class="queue-artist">Harry&nbsp;Styles</span>
+				</div>
+				<i class="far fa-heart"></i>
+				<i class="fas fa-plus"></i>
+			</div>
+			<div class="song-in-queue">
+				<span class="queue-no">04</span>
+				<div class="container">
+					<img src="https://upload.wikimedia.org/wikipedia/en/d/d8/Ava_Max_-_Kings_%26_Queens.png">
+					<div class="overlay">
+					    <a href="#" class="icon" title="play">
+					    	<i class="fas fa-play"></i>
+					  	</a>
+					</div>
+				</div>
+				<div class="song-left-detail">
+					<span>Kings & Queens</span>
+					<span class="queue-artist">Eva&nbsp;Max</span>
+				</div>
+				<i class="far fa-heart"></i>
+				<i class="fas fa-plus"></i>
+			</div>
+			<div class="song-in-queue">
+				<span class="queue-no">05</span>
+				<div class="container">
+					<img src="https://m.media-amazon.com/images/M/MV5BNjI5YTJiZGQtZDQ4NC00OWRjLWI5ZTktNWY4NmJmMWJlYTM3XkEyXkFqcGdeQXVyNjE0ODc0MDc@._V1_.jpg">
+					<div class="overlay">
+					    <a href="#" class="icon" title="play">
+					    	<i class="fas fa-play"></i>
+					  	</a>
+					</div>
+				</div>
+				<div class="song-left-detail">
+					<span>Taking You Dance</span>
+					<span class="queue-artist">Jason&nbsp;Derulo</span>
+				</div>
+				<i class="far fa-heart"></i>
+				<i class="fas fa-plus"></i>
+			</div>
+			<div class="song-in-queue">
+				<span class="queue-no">06</span>
+				<div class="container">
+					<img src="https://i.kfs.io/album/global/22380148,0v1/fit/500x500.jpg">
+					<div class="overlay">
+					    <a href="#" class="icon" title="play">
+					    	<i class="fas fa-play"></i>
+					  	</a>
+					</div>
+				</div>
+				<div class="song-left-detail">
+					<span>Scars To Your Beautiful</span>
+					<span class="queue-artist">Alessia&nbsp;Cara</span>
+				</div>
+				<i class="far fa-heart"></i>
+				<i class="fas fa-plus"></i>
+			</div>
+			<div class="song-in-queue">
+				<span class="queue-no">07</span>
+				<div class="container">
+					<img src="https://i.pinimg.com/736x/6a/70/27/6a7027042cdf37154f2d419fbbe5a4df.jpg">
+					<div class="overlay">
+					    <a href="#" class="icon" title="play">
+					    	<i class="fas fa-play"></i>
+					  	</a>
+					</div>
+				</div>
+				<div class="song-left-detail">
+					<span>No Me Conoce</span>
+					<span class="queue-artist">Jhay&nbsp;Cortez,&nbsp;J&nbsp;Balvin,&nbsp;Bad&nbsp;Bunny</span>
+				</div>
+				<i class="far fa-heart"></i>
+				<i class="fas fa-plus"></i>
+			</div>
+			<div class="song-in-queue">
+				<span class="queue-no">08</span>
+				<div class="container">
+					<img src="https://upload.wikimedia.org/wikipedia/en/c/c5/DJ_Snake_and_J_Balvin_-_Loco_Contigo.png">
+					<div class="overlay">
+					    <a href="#" class="icon" title="play">
+					    	<i class="fas fa-play"></i>
+					  	</a>
+					</div>
+				</div>
+				<div class="song-left-detail">
+					<span>Loco Contigo</span>
+					<span class="queue-artist">DJ&nbsp;Snake,&nbsp;J&nbsp;Balvin,&nbsp;Tyga</span>
+				</div>
+				<i class="far fa-heart"></i>
+				<i class="fas fa-plus"></i>
+			</div>
+			<div class="song-in-queue">
+				<span class="queue-no">09</span>
+				<div class="container">
+					<img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e7/IDGAF_cover.png/220px-IDGAF_cover.png">
+					<div class="overlay">
+					    <a href="#" class="icon" title="play">
+					    	<i class="fas fa-play"></i>
+					  	</a>
+					</div>
+				</div>
+				<div class="song-left-detail">
+					<span>IDGAF</span>
+					<span class="queue-artist">Dua&nbsp;Lipa</span>
+				</div>
+				<i class="far fa-heart"></i>
+				<i class="fas fa-plus"></i>
+			</div>
+			<div class="song-in-queue">
+				<span class="queue-no"><i class="fas fa-align-center"></i></span>
+				<div class="container">
+					<img src="https://a10.gaanacdn.com/images/albums/46/3552346/crop_175x175_3552346.jpg">
+					<div class="overlay">
+					    <a href="#" class="icon" title="play">
+					    	<i class="fas fa-play"></i>
+					  	</a>
+					</div>
+				</div>
+				<div class="song-left-detail">
+					<span>Prisoner</span>
+					<span class="queue-artist">Miley&nbsp;Cyrus,&nbsp;Dua&nbsp;Lipa</span>
+				</div>
+				<i class="far fa-heart"></i>
+				<i class="fas fa-plus"></i>
+			</div>
+			<div class="song-in-queue">
+				<span class="queue-no">11</span>
+				<div class="container">
+					<img src="https://i.pinimg.com/originals/8b/8c/c5/8b8cc57a160d164cdf008e63acecfc4e.jpg">
+					<div class="overlay">
+					    <a href="#" class="icon" title="play">
+					    	<i class="fas fa-play"></i>
+					  	</a>
+					</div>
+				</div>
+				<div class="song-left-detail">
+					<span>Call Out My Name</span>
+					<span class="queue-artist">The&nbsp;Weeknd</span>
+				</div>
+				<i class="far fa-heart"></i>
+				<i class="fas fa-plus"></i>
+			</div>
+		</div>
+	</div>
+	
+	<div class="right-half">
+		<div id="latest-release">
+			<heading>
+				<h2 class="type-heading">Similar Artists<span>View All</span></h2>
+			</heading>
+			<div class="flex">
+				<div class="latest-song">
+					<div class="container">
+						<img src="https://media1.popsugar-assets.com/files/thumbor/epMWjxQbyhB1ELO8gKQrFlvkzfM/0x192:1350x1542/fit-in/1200x630/filters:format_auto-!!-:strip_icc-!!-/2021/03/11/903/n/1922283/00486ba4604a8065a9de70.50909732_/i/maroon-5-megan-thee-stallion-beautiful-mistakes-song.png">
+						<div class="overlay">
+						    <a href="#" class="icon" title="play">
+						    	<i class="fas fa-play"></i>
+						  	</a>
+						</div>
+					</div>
+					<div class="left-detail">
+					<span class="song-name">B. Mistakes</span>
+					<span class="date">MAR 3,2021</span>
+					</div>
+					<div class="right-detail">
+					<span class="three-dot"><i class="fas fa-ellipsis-h"></i></span>
+					<span class="song-time">4:44</span>
+					</div>
+				</div>
+				<div class="latest-song">
+					<div class="container">
+						<img src="https://upload.wikimedia.org/wikipedia/en/a/a8/Dua_Lipa_-_We%27re_Good_cover_art.png">
+						<div class="overlay">
+						    <a href="#" class="icon" title="play">
+						    	<i class="fas fa-play"></i>
+						  	</a>
+						</div>
+					</div>
+					<div class="left-detail">
+					<span class="song-name">We're Good</span>
+					<span class="date">FEB 11,2021</span>
+					</div>
+					<div class="right-detail">
+					<span class="three-dot"><i class="fas fa-ellipsis-h"></i></span>
+					<span class="song-time">4:44</span>
+					</div>
+				</div>
+				<div class="latest-song">
+					<div class="container">
+					<img src="https://i2.wp.com/wiseloaded.com/wp-content/uploads/2021/03/drake-whats-next-artwork.jpg?fit=700%2C700&ssl=1">
+					<div class="overlay">
+						    <a href="#" class="icon" title="play">
+						    	<i class="fas fa-play"></i>
+						  	</a>
+						</div>
+					</div>
+
+					<div class="left-detail">
+					<span class="song-name">What's next</span>
+					<span class="date">JAN 20,2023</span>
+					</div>
+					<div class="right-detail">
+					<span class="three-dot"><i class="fas fa-ellipsis-h"></i></span>
+					<span class="song-time">4:44</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="recently-played">
+			<heading>
+					<h2 class="type-heading">Recently Played<span>View All</span></h2>
+			</heading>
+			<div id="aside-content">
+					<div class="song-in-queue">
+						<span class="queue-no">01</span>
+						<div class="container">
+							<img src="https://media.pitchfork.com/photos/605cc407d903156f6be111c3/master/w_1280%2Cc_limit/Demi-Lovato.jpg">
+							<div class="overlay">
+							    <a href="#" class="icon" title="play">
+							    	<i class="fas fa-play"></i>
+							  	</a>
+							</div>
+						</div>
+						<div class="song-left-detail">
+							<span>Dancing With The Devil</span>
+							<span class="queue-artist">Demi&nbsp;Lovato</span>
+						</div>
+						<i class="far fa-heart"></i>
+					</div>
+					<div class="song-in-queue">
+						<span class="queue-no"><i class="fas fa-align-center"></i></span>
+						<div class="container">
+							<img src="https://1.bp.blogspot.com/-d5k-grce9DI/YFwX4YoSn3I/AAAAAAAAC_s/s81lnYHKUYUvQ2PyUvWuDU_nQaUJ2uojACLcBGAsYHQ/s985/24kGoldn-El-Dorado-Album.jpg">
+							<div class="overlay">
+							    <a href="#" class="icon" title="play">
+							    	<i class="fas fa-play"></i>
+							  	</a>
+							</div>
+						</div>
+						<div class="song-left-detail">
+							<span>Love Or Lust</span>
+							<span class="queue-artist">24kGoldn</span>
+						</div>
+						<i class="far fa-heart"></i>
+					</div>
+					<div class="song-in-queue">
+						<span class="queue-no">03</span>
+						<div class="container">
+							<img src="https://i1.sndcdn.com/artworks-000640876012-c5r6fl-t500x500.jpg">
+							<div class="overlay">
+							    <a href="#" class="icon" title="play">
+							    	<i class="fas fa-play"></i>
+							  	</a>
+							</div>
+						</div>
+						<div class="song-left-detail">
+							<span>Watermelon Sugar</span>
+							<span class="queue-artist">Harry&nbsp;Styles</span>
+						</div>
+						<i class="far fa-heart"></i>
+					</div>
+					<div class="song-in-queue">
+						<span class="queue-no">04</span>
+						<div class="container">
+							<img src="https://upload.wikimedia.org/wikipedia/en/d/d8/Ava_Max_-_Kings_%26_Queens.png">
+							<div class="overlay">
+							    <a href="#" class="icon" title="play">
+							    	<i class="fas fa-play"></i>
+							  	</a>
+							</div>
+						</div>
+						<div class="song-left-detail">
+							<span>Kings & Queens</span>
+							<span class="queue-artist">Eva&nbsp;Max</span>
+						</div>
+						<i class="far fa-heart"></i>
+					</div>
+					<div class="song-in-queue">
+						<span class="queue-no">05</span>
+						<div class="container">
+							<img src="https://m.media-amazon.com/images/M/MV5BNjI5YTJiZGQtZDQ4NC00OWRjLWI5ZTktNWY4NmJmMWJlYTM3XkEyXkFqcGdeQXVyNjE0ODc0MDc@._V1_.jpg">
+							<div class="overlay">
+							    <a href="#" class="icon" title="play">
+							    	<i class="fas fa-play"></i>
+							  	</a>
+							</div>
+						</div>
+						<div class="song-left-detail">
+							<span>Taking You Dance</span>
+							<span class="queue-artist">Jason&nbsp;Derulo</span>
+						</div>
+						<i class="far fa-heart"></i>
+					</div>
+					<div class="song-in-queue">
+						<span class="queue-no">06</span>
+						<div class="container">
+							<img src="https://i.kfs.io/album/global/22380148,0v1/fit/500x500.jpg">
+							<div class="overlay">
+							    <a href="#" class="icon" title="play">
+							    	<i class="fas fa-play"></i>
+							  	</a>
+							</div>
+						</div>
+						<div class="song-left-detail">
+							<span>Scars To Your Beautiful</span>
+							<span class="queue-artist">Alessia&nbsp;Cara</span>
+						</div>
+						<i class="far fa-heart"></i>
+					</div>
+					<div class="song-in-queue">
+						<span class="queue-no">07</span>
+						<div class="container">
+							<img src="https://i.pinimg.com/736x/6a/70/27/6a7027042cdf37154f2d419fbbe5a4df.jpg">
+							<div class="overlay">
+							    <a href="#" class="icon" title="play">
+							    	<i class="fas fa-play"></i>
+							  	</a>
+							</div>
+						</div>
+						<div class="song-left-detail">
+							<span>No Me Conoce</span>
+							<span class="queue-artist">Jhay&nbsp;Cortez,&nbsp;J&nbsp;Balvin,&nbsp;Bad&nbsp;Bunny</span>
+						</div>
+						<i class="far fa-heart"></i>
+					</div>
+					<div class="song-in-queue">
+						<span class="queue-no">08</span>
+						<div class="container">
+							<img src="https://upload.wikimedia.org/wikipedia/en/c/c5/DJ_Snake_and_J_Balvin_-_Loco_Contigo.png">
+							<div class="overlay">
+							    <a href="#" class="icon" title="play">
+							    	<i class="fas fa-play"></i>
+							  	</a>
+							</div>
+						</div>
+						<div class="song-left-detail">
+							<span>Loco Contigo</span>
+							<span class="queue-artist">DJ&nbsp;Snake,&nbsp;J&nbsp;Balvin,&nbsp;Tyga</span>
+						</div>
+						<i class="far fa-heart"></i>
+					</div>
+					<div class="song-in-queue">
+						<span class="queue-no">09</span>
+						<div class="container">
+							<img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e7/IDGAF_cover.png/220px-IDGAF_cover.png">
+							<div class="overlay">
+							    <a href="#" class="icon" title="play">
+							    	<i class="fas fa-play"></i>
+							  	</a>
+							</div>
+						</div>
+						<div class="song-left-detail">
+							<span>IDGAF</span>
+							<span class="queue-artist">Dua&nbsp;Lipa</span>
+						</div>
+						<i class="far fa-heart"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>
